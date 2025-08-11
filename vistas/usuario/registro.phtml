@@ -1,0 +1,141 @@
+    <div class="col-12 text-center ">
+        <div class="col-12 text-center">
+                    <form id="frmreg" action="" method="post" autocomplete="new-password">
+                        <div class="frm-grp">
+                            <div class="row vars">
+                                <div class="col">
+                                    <span class="peqn" for="nombres">NOMBRES</span>
+                                    <input autocomplete="new-password" type="text" class="frm-cntrl clsfrm solo-letra"
+                                    name="nombres" id="nombres" pattern="[a-zA-Z]{3,60}" minlength='3' maxlength='60'
+                                    required="required" value="<?php echo ($this->datos) ? $this->datos['nombres'] : ''; ?>">
+                                </div>
+                                <div class="col">
+                                    <span class="peqn" for="idsubcat">APELLIDOS</span>
+                                    <input autocomplete="new-password" type="text" class="frm-cntrl clsfrm solo-letra"
+                                    name="apellidos" id="apellidos" pattern="[a-zA-Z]{3,60}" minlength='3' maxlength='60'
+                                    required="required" value="<?php echo ($this->datos) ? $this->datos['apellidos'] : ''; ?>">
+                                </div>
+                                <div class="col">
+                                    <span class="peqn" for="idsubcat">CLIENTE</span>
+                                    <input autocomplete="new-password" type="text" class="frm-cntrl clsfrm solo-numero"
+                                    name="codigo" id="codigo" 
+                                    required="required" value="<?php echo ($this->datos) ? $this->datos['usuario'] : ''; ?>">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-grp">
+                            <div class="row vars">
+                                <div class="col">
+                                    <span class="peqn" for="usuario">USUARIO</span>
+                                    <input autocomplete="new-password" type="text" name="usuario" id="usuario"
+                                    class="frm-cntrl clsfrm solo-numlet" pattern="[A-Za-z0-9]{6,20}"
+                                    required="required" value="<?php echo ($this->datos) ? $this->datos['usuario'] : ''; ?>">
+                                </div>
+                                <div class="col">
+                                    <span class="peqn" for="nivel">NIVEL</span>
+                                    <select id="nivel" name="nivel" class="frm-cntrl clsfrm" required="required">
+                                        <option value='-1'></option>
+                                        <option value='0'>Administrador</option>
+                                        <option value='1'>Usuario</option>
+                                        <option value='2'>Consulta</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <span class="peqn" for="clave">CLAVE</span>
+                                    <input autocomplete="new-password" type="password" class="frm-cntrl clsfrm"
+                                    name="clave" id="clave" required="required" 
+                                    value="<?php echo ($this->datos) ? $this->datos['clave'] : ''; ?>">
+                                </div>
+                                <div class="col">
+                                    <span class="peqn" for="confirm_clave">CONFIRMAR CLAVE</span>
+                                    <input type="password" class="frm-cntrl clsfrm" name="confirm_clave" 
+                                    id="confirm_clave" required="required" 
+                                    value="<?php echo ($this->datos) ? $this->datos['confirm_clave'] : ''; ?>" autocomplete="new-password">
+                                </div>
+                                <div class="col">
+                                    <span class="peqn" for="idsubcat">DEPARTAMENTO</span>
+                                    <?php
+                                        if($this->datos0) {
+                                            $i=0;
+                                            echo "
+                                            <select id='idpto' name='idpto' class='frm-cntrl clsfrm' required='required'>
+                                                <option value='-1'></option>
+                                            ";
+                                            foreach($this->datos0 as $key => $value) {
+                                                echo "<option value='" . $value['idpto'] . "'>".$value['descitem']."</option>".PHP_EOL;
+                                            }
+                                            echo "</select>";
+                                        }
+                                    ?>
+                                </div>
+                                <div class="col">
+                                    <span class="peqn" for="departamentos">CONFIRMAR CLAVE</span>
+                                    <input type="text" class="frm-cntrl clsfrm" name="departamentos"
+                                    id="departamentos" readonly value="" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-grp">
+                            <div class="row vars">
+                                
+                                <div class="col">
+                                    <span class="peqn" for="idsubcat">PREGUNTA DE SEGURIDAD 1</span>
+                                    <select id="pregseg1" name="pregseg1" class="frm-cntrl clsfrm" required="required">
+                                        <option value='-1'></option>
+                                        <?php
+                                        foreach ($this->alma as $regstr) {
+                                            echo "<option value='" . $regstr['id'] . "'>".$regstr['pregunta']."</option>".PHP_EOL;
+                                        }
+                                        ?>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <span class="peqn" for="idsubcat">RESPUESTA DE SEGURIDAD 1</span>
+                                    <input type="text" class="frm-cntrl clsfrm" name="respseg1" id="respseg1"
+                                    pattern="[A-Za-z0-9]{3,60}" minlength='3' maxlength='60' required="required">
+                                </div>
+                                <div class="col">
+                                    <span class="peqn" for="idsubcat">PREGUNTA DE SEGURIDAD 2</span>
+                                    <select id="pregseg2" name="pregseg2" class="frm-cntrl clsfrm" required="required">
+                                        <option value='-1'></option>
+                                        <?php
+                                        foreach ($this->alma as $regstr) {
+                                            echo "<option value='" . $regstr['id'] . "'>".$regstr['pregunta']."</option>".PHP_EOL;
+                                        }
+                                        ?>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <span class="peqn" for="respseg2">RESPUESTA DE SEGURIDAD 2</span>
+                                    <input type="text" class="frm-cntrl clsfrm" name="respseg2" id="respseg2"
+                                    pattern="[A-Za-z0-9]{3,60}" minlength='3' maxlength='60' required="required">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 text-center pt-5">
+                            <label class="form-check-label col-12 row">
+                                <input type="checkbox" required="required" class="frm-cntrl clsfrm" name="chckbx">
+                                &nbsp;  Acepto los terminos & Politicas de Privacidad
+                            </label>
+                        </div>
+                        <div class="frm-grp">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="hidden" name="enviar" value=1>
+                                </div>
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary">REGISTRATE</button>
+                                </div>
+                                <div class="col">
+                                    <input type="hidden" name="rslst" id="rslst">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="col-12 row">
+                        <div class="text-center col">YA TIENES UNA CUENTA?</div> <a href='<?php echo BASE_URL.'login' ?>' class="col">INICIA SESIÓN</a>
+                    </div>
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,102 @@
+        <div class="col-12 text-center ">
+            <div class="col-12 text-center">
+                <form id="frmedi" action="" method="post" autocomplete="new-password">
+                    <input type="hidden" name="iddtoa" id="iddtoa">
+                    <div class="frm-grp">
+                        <div class="row">
+                            <div class="col">
+                                <span class="peqn" for="idpto">DEPARTAMENTO</span>
+                                <select name="idpto" id="idpto" class="frm-cntrl clsfrm">
+
+                                    <option value='-1'>SELECCIONE</option>
+                                    <?php
+                                        foreach ($this->datos0 as $dts) {
+                                            echo "<option value='".$dts["idpto"]."'>".$dts['descitem']."</option>";
+                                        }
+                                    ?>
+                                </select>
+                            </div>
+                            <div class="col">
+                            <span class="peqn" for="idusr">CÓDIGO:</span>
+                                <input type="text" class="frm-cntrl clsfrm" name="idusr" id="idusr" readonly="readonly">
+                            </div>
+                            <div class="col">
+                                <span class="peqn" for="cliente">CLIENTE:</span>
+                                <input type="text" class="frm-cntrl clsfrm" name="cliente" id="cliente">
+                            </div>
+                            <div class="col">
+                                <span class="peqn" for="nombres">NOMBRES:</span>
+                                <input type="text" class="frm-cntrl clsfrm solo-letra" name="nombres" id="nombres">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frm-grp">
+                        <div class="row">
+                            <div class="col">
+                                <span class="peqn" for="apellidos">APELLIDOS:</span>
+                                <input type="text" class="frm-cntrl clsfrm solo-letra" name="apellidos" id="apellidos">
+                            </div>
+                            <div class="col">
+                                <span class="peqn" for="usuario">USUARIO:</span>
+                                <input type="text" class="frm-cntrl clsfrm" name="usuario" id="usuario">
+                            </div>
+                            <div class="col">
+                                <span class="peqn" for="nivel">NIVEL:</span>
+                                <input type="text" class="frm-cntrl clsfrm" name="nivel" id="nivel">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frm-grp">
+                        <div class="row">
+                            <div class="col">
+                                <input type="hidden" name="enviar" value=1>
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary">Actualizar</button>
+                            </div>
+                            <div class="col">
+                                <input type="hidden" name="rslst" id="rslst">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <?php
+                    if ($this->datos) {
+                        echo "
+                        <table class='table' id='tblCte'>
+                            <tbody>
+                                <th>Departamento</th>
+                                <th>Codigo</th>
+                                <th>Cliente</th>
+                                <th>nombres</th>
+                                <th>apellidos</th>
+                                <th>usuario</th>
+                                <th>nivel</th>";
+                                foreach($this->datos as $r) {
+                                    $idus = $r['idusr'];
+                                    $iddt = $r['idpto'];
+                                    $dsci = $r['descitem'];
+                                    $clnt = $r['cliente'];
+                                    $nmbr = ($r['nombres'] != NULL) ? ucwords($r['nombres']) : "";
+                                    $apll = ($r['apellidos'] != NULL) ? ucwords($r['apellidos']) : "";
+                                    $user = ($r['usuario'] != null) ? $r['usuario'] : "";
+                                    $nivl = ($r['nivel'] != null) ? $r['nivel'] : "";
+                                    echo "<tr>
+                                        <td class='".$iddt."'>$dsci</td>
+                                        <td>$idus</td>
+                                        <td>$clnt</td>
+                                        <td>$nmbr</td>
+                                        <td>$apll</td>
+                                        <td>$user</td>
+                                        <td>$nivl</td>
+                                    </tr>
+                                ";
+                                }
+                                echo "
+                            <tbody>
+                        </table>";
+                    }
+                ?>
+            </div>
+        </div>
+    </div>

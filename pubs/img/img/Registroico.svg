@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="24px" height="27.688px" viewBox="3.999 3.262 24 27.688" enable-background="new 3.999 3.262 24 27.688"
+	 xml:space="preserve">
+<g id="Cuaderno">
+	<rect x="4.125" y="5.153" fill="#FFFFFF" stroke="#996633" stroke-width="0.25" width="15.85" height="1.354"/>
+	<rect x="4.125" y="7.858" fill="#FFFFFF" stroke="#996633" stroke-width="0.25" width="15.85" height="1.353"/>
+	<rect x="4.125" y="10.564" fill="#FFFFFF" stroke="#996633" stroke-width="0.25" width="15.85" height="1.354"/>
+	<rect x="4.125" y="13.271" fill="#FFFFFF" stroke="#996633" stroke-width="0.25" width="15.85" height="1.354"/>
+	<rect x="4.125" y="15.977" fill="#FFFFFF" stroke="#996633" stroke-width="0.25" width="15.85" height="1.354"/>
+	<rect x="4.125" y="18.684" fill="#FFFFFF" stroke="#996633" stroke-width="0.25" width="15.85" height="1.353"/>
+	<rect x="4.125" y="21.388" fill="#FFFFFF" stroke="#996633" stroke-width="0.25" width="15.85" height="1.354"/>
+	<rect x="4.125" y="24.095" fill="#FFFFFF" stroke="#996633" stroke-width="0.25" width="15.85" height="1.353"/>
+	<path fill="#996B3A" d="M20.1,5.154H4V4.378c0,0,0.016-0.579,0.3-0.579c0.231,0,15.263,0,15.5,0c0.31,0,0.3,0.579,0.3,0.579V5.154z
+		"/>
+	<rect x="4.002" y="6.506" fill="#996B3A" width="16.096" height="1.354"/>
+	<rect x="4.002" y="9.21" fill="#996B3A" width="16.096" height="1.354"/>
+	<rect x="4.002" y="11.917" fill="#996B3A" width="16.096" height="1.354"/>
+	<rect x="4.002" y="14.625" fill="#996B3A" width="16.096" height="1.354"/>
+	<rect x="4.002" y="17.33" fill="#996B3A" width="16.096" height="1.354"/>
+	<rect x="4.002" y="20.035" fill="#996B3A" width="16.096" height="1.354"/>
+	<rect x="4.002" y="22.741" fill="#996B3A" width="16.096" height="1.354"/>
+	<path fill="#996B3A" d="M20.098,26.43c0,0-0.019,0.371-0.406,0.371c-0.283,0-15.094,0-15.388,0c-0.317,0-0.3-0.371-0.3-0.371
+		v-0.982h16.095V26.43z"/>
+</g>
+<g id="Lapiz">
+	<path fill="#FFCC00" d="M17.543,21.552l-3.464,3.146l-0.31-4.462l5.645-13.39c0.496-1.187,1.738-1.848,2.773-1.476l0,0
+		c1.043,0.375,1.479,1.637,0.985,2.825L17.543,21.552z"/>
+	<path fill="#686454" d="M19.387,12.108c-0.495-0.176-1.978-0.505-1.978-0.505l1.401-3.326c0,0,1.485,0.314,1.985,0.488
+		c0.448,0.159,1.72,0.992,1.72,0.992l-1.402,3.327C21.113,13.083,19.842,12.268,19.387,12.108z"/>
+	<path fill="#FF7900" d="M20.796,8.765c-0.501-0.176-1.985-0.488-1.985-0.488c1.526-3.619,1.57-3.641,3.415-2.904
+		c1.827,0.729,1.816,0.765,0.29,4.384C22.516,9.756,21.248,8.925,20.796,8.765z"/>
+	<path fill="#C6A487" d="M17.543,21.552l-3.464,3.146l-0.242-4.625c0,0,1.55,0.198,2.026,0.39
+		C16.33,20.652,17.543,21.552,17.543,21.552z"/>
+	<path d="M15.317,23.505l-1.238,1.193l-0.152-1.688c0,0,0.597,0.117,0.786,0.182C14.873,23.25,15.118,23.383,15.317,23.505z"/>
+</g>
+</svg>

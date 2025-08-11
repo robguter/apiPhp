@@ -1,0 +1,33 @@
+
+<?php 
+    echo $this->_error;
+    $readonly = "";
+    if ($this->_error=="SISTEMA INACTIVO EN ESTE HORARIO") {
+        $readonly = "disabled";
+    }
+?>
+            <div id="oContn" class="text-center">
+                <div class="iniusr col-12 text-center">
+                    <h3><?php echo $this->sbTitle; ?></h3>
+                </div>
+                <form id="catchafrm" method="post" action="" autocomplete="off">
+                    <input type="hidden" value="1" name="enviar" />
+                    <div class="frm-grp text-center">
+                        <img class="col-12" id="cptimg" src="vistas/login/js/cptch.php" alt="">
+                        <input class="col-12 frm-cntrl" id="cpttxt" type="text" name="code" <?php echo $readonly ?> 
+                        placeholder="Por favor, ingrese la captcha. Click en imagen para cambiarla">
+                    </div>
+                    <div class="frm-grp col justify-content-center">
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col text-center">
+                                <button class="btn btn-primary" id="Envia" type="submit" <?php echo $readonly ?>>Enviar</button>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

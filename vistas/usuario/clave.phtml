@@ -1,0 +1,39 @@
+    <div class="col-12 text-center ">
+        <div>
+            <form id="frmreg" action="" method="post" autocomplete="new-password">
+                <input type="hidden" name="enviar" value=1>
+                
+                <div class="frm-grp">
+                    <div class="row">
+                            <input autocomplete="new-password" type="HIDDEN" class="frm-cntrl solo-numlet" name="user" 
+                            readonly="readonly" value="<?php echo $this->datos['idusr']; ?>">
+                        <div class="col">
+                            <span class="peqn" for="idsubcat">CLAVE ANTERIOR</span>
+                            <input autocomplete="new-password" type="password" class="frm-cntrl"
+                            name="clavea" id="clavea" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="frm-grp">
+                    <div class="row">
+                        <div class="col">
+                            <span class="peqn" for="idsubcat">CLAVE NUEVA</span>
+                            <input autocomplete="new-password" type="password" class="frm-cntrl" name="clave" 
+                            required="required" 
+                            value="">
+                        </div>
+                        <div class="col">
+                            <span class="peqn" for="idsubcat">CONFIRMAR CLAVE</span>
+                            <input autocomplete="new-password" type="password" class="frm-cntrl"
+                            name="confirm_clave" required="required" value="">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="frm-grp">
+                    <button id="btnCmbClave" type="submit" class="btn btn-lg btn-block">Cambiar clave</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

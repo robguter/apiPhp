@@ -1,0 +1,113 @@
+
+<div class="col-12 text-center dsbrd">
+    <h1><?php echo $this->titulo; ?></h1>
+    <div class="col-12 text-center">
+                <form id="frmreg" action="" method="post" autocomplete="new-password">
+                    
+                    <div class="frm-grp">
+                        <div class="row">
+                            <div class="col">
+                                Código:
+                                <input type="text" class="frm-cntrl" name="idusr" id="idusr" readonly="readonly">
+                            </div>
+                            <div class="col">
+                                Cliente:
+                                <input type="text" class="frm-cntrl" name="cliente" id="cliente">
+                            </div>
+                            <div class="col">
+                                Nombres:
+                                <input type="text" class="frm-cntrl solo-letra" name="nombres" id="nombres">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frm-grp">
+                        <div class="row">
+                            <div class="col">
+                                Apellidos:
+                                <input type="text" class="frm-cntrl solo-letra" name="apellidos" id="apellidos">
+                            </div>
+                            <div class="col">
+                                Usuario:
+                                <input type="text" class="frm-cntrl" name="usuario" id="usuario">
+                            </div>
+                            <div class="col">
+                                Nivel:
+                                <input type="text" class="frm-cntrl" name="nivel" id="nivel">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frm-grp">
+                        <div class="row">
+                            <div class="col">
+                                Sucursal:
+                                <input type="text" class="frm-cntrl" name="codsucursal" id="codsucursal">
+                            </div>
+                            <div class="col">
+                                Oficina Origen:
+                                <input type="text" class="frm-cntrl" name="oficinao" id="oficinao">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="frm-grp">
+                        <div class="row">
+                            <div class="col">
+                                <input type="hidden" name="enviar" value=1>
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary">Actualizar</button>
+                            </div>
+                            <div class="col">
+                                <input type="hidden" name="rslst" id="rslst">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+        <?php
+            if ($this->datos) {
+                echo "
+                <table class='table' id='tblCte'>
+                    <tbody>
+                        <th>codigo</th>
+                        <th>Cliente</th>
+                        <th>nombres</th>
+                        <th>apellidos</th>
+                        <th>usuario</th>
+                        <th>nivel</th>
+                        <th>sucursal</th>
+                        <th>oficinao</th>
+                        <th class='col Edita'><b></b></th>
+                        <th class='col Elimi'><b></b></th>";
+                        
+                        foreach($this->datos as $r) {
+                            //echo "El Código: ".$r['idcomp'];
+                            $idus = $r['idusr'];
+                            $clnt = $r['cliente'];
+                            $nmbr = ($r['nombres'] != NULL) ? ucwords($r['nombres']) : "";
+                            $apll = ($r['apellidos'] != NULL) ? ucwords($r['apellidos']) : "";
+                            $user = ($r['usuario'] != null) ? $r['usuario'] : "";
+                            $nivl = ($r['nivel'] != null) ? $r['nivel'] : "";
+                            $sucu = ($r['codsucursal'] != null) ? $r['codsucursal'] : "";
+                            $ofic = ($r['oficinao'] != null) ? $r['oficinao'] : "";
+                            echo "<tr>
+                                <td>$idus</td>
+                                <td>$clnt</td>
+                                <td>$nmbr</td>
+                                <td>$apll</td>
+                                <td>$user</td>
+                                <td>$nivl</td>
+                                <td>$sucu</td>
+                                <td>$ofic</td>
+                                <td class='Edita EdiUsr' id='$idus'><b></b></td>
+                                <td class='Elimi EliUsr' id='$idus'><b></b></td>
+                            </tr>
+                        ";
+                        }
+                        echo "
+                    <tbody>
+                </table>";
+            }
+        ?>

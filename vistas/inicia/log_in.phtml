@@ -1,0 +1,36 @@
+            <div id="oContn">
+                <div class="col-12 text-center">
+                    <div class="iniusr col-12 text-center">
+                        <h3><?php echo $this->sbTitle; ?></h3>
+                    </div>
+                    <form id="lgnfrm" method="post" action="" autocomplete="off">
+                        <div class="frm-grp col-12 text-center">
+                            <h3 class="col-12 text-center">Acceso al Sistema</h3>
+                        </div>
+                        
+                        <input type="hidden" value="2" name="enviar" />
+                        <div class="frm-grp">
+                            <div class="col">
+                                <input autocomplete="new-password" type="text" class="frm-cntrl" name="Usuario" id="Usuario" placeholder="Ingrese su Usuario">
+                            </div>
+                        </div>
+                        <div class="frm-grp">
+                            <div class="col">
+                                <input autocomplete="new-password" type="password" class="frm-cntrl" name="Clave" id="Clave" placeholder="Ingrese su clave">
+                            </div>
+                        </div>
+                        <div class="frm-grp col justify-content-center">
+                            <div class="row">
+                                <div class="col"></div>
+                                <div class="col">
+                                    <button class="btn btn-primary" id="Envia" type="submit" disabled="true">Enviar</button>
+                                </div>
+                                <div class="col"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

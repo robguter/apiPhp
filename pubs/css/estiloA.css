@@ -1,0 +1,1049 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation: .5s ease-in 0s;
+    z-index: 0;
+    font-size: 10pt;/***/
+}
+body {
+    font:   100 normal 12px/18px Tahoma,Georgia,sans-serif,Helvetica,Arial;
+    font-family: "Georgia","Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    min-width: 300px;
+    -o-background-size: cover;
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    margin: 0px;
+    padding: 0px;
+}
+.ppal {
+    background: rgb(17,58,58);  
+    min-height: 55px;
+    max-height: 55px; /* 02/02/2024 Claude  decia 80% */
+    width: 100%;
+    min-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 0px;
+    padding-right: 10%;
+    /*border-radius: 0px 0px 8px 8px;*/
+}
+#header {
+    min-height: 55px;
+    max-height: 55px;
+    max-width: 55px;
+}
+#header img {
+  width: 100%;
+  height: 100%;
+  max-width: 80px;
+  }
+#title, #barra {
+    text-align: center;
+    max-height: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+#title h1 {
+  color:   rgb(255,255,255,1);
+    text-shadow: 0px 3px 2px rgb(0,0,0,.5),
+                 0px 2px 1px rgb(0,0,0,.5);
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 500;
+    font-size: 200%;
+    max-width: 100%;
+    height: 40px;
+    max-height: 45px;
+    line-height: 1.3;
+}
+#title h3 {
+  color: rgb(50, 120, 150, 0.95);
+  text-shadow: 0px 1px 2px rgb(0,0,0,.5);
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 5%;
+}
+.card {
+    min-height: 197px;
+}
+.card-title {
+    font-size: 150%;
+}
+.card-subtitle {
+    font-size: 110%;
+    line-height: 0.85;
+}
+div.card-body h3 {
+    font-size: 130%;
+}
+/***********************************/
+.frm-grp {
+  margin-bottom: 15px;
+}
+
+.table img {
+    max-width: 20px;
+}
+table#total {
+    max-width: 50%;
+    border: 1px solid #000;
+}
+table#total td {
+    max-width: 50%;
+    border: 1px solid #000;
+    text-align: right;
+}
+table#total th {
+    text-align: left;
+}
+table#total th.thd {
+    text-align: center;
+}
+/******************************/
+.gnrl, .dsbrd {
+    margin-top: 6%;
+}
+.dsbrd > h1, .links li h4 {
+    text-shadow:  0px 2px 3px rgb(25,35,35,.75),
+                  1px 1px 3px rgb(25,35,35,.75),
+                 -1px 1px 3px rgb(25,35,35,.75);
+    color: rgb(245,255,255,.80);
+   }
+.links li h4 {
+    text-transform: uppercase;
+    padding: 0px;
+    /*letter-spacing: 1px;*/
+}
+.img-fluid {
+    margin: 0 5%;
+    width: 60%;
+    height: 110px;
+    min-height: 110px;
+    max-height: 110px;
+    margin-bottom: 3%;
+}
+#cptimg {
+    max-height: 70px;
+    max-width: 300px;
+}
+#oContn {
+    width: 100%;
+    min-width: 100%;
+    justify-content: center;
+    margin: 0% auto 2%;
+    padding: 3% 20% 2%;
+}
+.info, .mensaje, .error {
+  font-size: 120%;
+    border: 1px solid;
+    margin: 0px 0px;
+    padding:5px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:left;
+    width:max-content;
+    position: absolute;
+    display: none;
+    line-height: 1.75;
+    color: rgb(0,60,70,.75);
+    min-height: auto;
+    height: auto;
+}
+.info {
+    color: #9cd417;
+    background-color: #BDE5F8;
+    background-image: url('../img/ok.svg');
+}
+.mensaje {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image:url('../img/ok.svg');
+}
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('../img/error.svg');
+}
+
+footer {
+    padding:    1px 10px;
+    padding-bottom: 0px;
+    background-color: rgb(241, 241, 241, 0.932);      /* Color barra pie antes de javascript  Claude 21-02-2024 */
+    bottom:     0;
+    position:fixed;
+    width:      100%;
+    max-width:  100%;
+    z-index:    0;
+    min-height: 2px;
+    max-height: auto;
+    text-align: center;
+    vertical-align:text-bottom;
+    vertical-align:baseline;
+    vertical-align:bottom;
+    margin:     0px;
+    /*border-radius: 0px 0px 8px 8px;*/
+
+
+}
+footer * {
+    vertical-align:text-bottom;
+    vertical-align:baseline;
+    vertical-align:bottom;
+    color: rgb(255,255,255,.75);
+    z-index: 0;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+footer .CpCntP {
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+    display: none;
+}
+footer .CpCntP h4 {
+    text-shadow:    0px 0px 0px;
+    /* background-color: rgb(0,0,0,.25); */
+    width:  auto;
+    /* border: 1px solid rgb(0,0,0,.5); */
+
+    background-color: rgb(0,0,0,.25);
+    border: 1px solid rgb(96, 97, 96, 0.836);
+     /* color recuadro de titulos en el pie de pagina Claude 20-02-2024 */
+
+    border-radius: 0px;
+    line-height: 1.5;
+    padding-bottom: 5px;
+    margin: 0px 5px 5px;
+    cursor: default;
+}
+footer .CpCntP div {
+    margin-top: 0;
+    text-align: center;
+    width:  33.33%;
+    height: auto;
+    float:  left;
+    display: block;
+
+    border-left: 1px solid rgb(0,0,0,.1);
+    border-left: 1px solid rgb(17,58,58); /*   Claude 20-02-2024 */
+    /*  Lineas divisorias verticales en el pie de pagina Claude 20-02-2024 */
+
+
+
+    border-left: 1px solid rgb(0,0,0,.1);
+    padding: 0% 1%;
+}
+footer .CpCntP div:first-child {
+    border-left: 0px solid rgb(0,0,0,.1);
+}
+
+
+
+footer .CpCntP div svg {
+    width:  2rem;
+    height: auto;
+    float: left;
+    margin: 1%;
+    padding: 0px;
+    z-index: 1;
+    stroke: rgb(255,255,255,.5);
+    transition:         all .75s;
+    -webkit-transition: all .75s;
+    -moz-transition:    all .75s;
+    -o-transition:      all .75s;
+}
+ul {
+    text-align: left;
+}
+footer ul li a svg:hover {
+    background-color: rgb(255,255,255,.5);
+    padding:    .95% 0 0 .95%;
+    color:      rgb(0,0,0,.1);
+    stroke:     rgb(0,0,0,1);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+footer ul {
+    list-style: none;
+}
+footer .CpCntP ul {
+    margin-top: 5px;
+    border-right: 0px solid rgb(255,255,255,.15);
+    width:      100%;
+    height:     auto;
+    min-height: 100px;
+    display:    table;
+}
+footer .CpCntP ul.Ultima {
+    padding-left: 3%;
+    /* border-right: 0px solid rgb(0,0,0,.5); */
+    border-right: 0px solid rgb(241, 241, 241, 0.979);
+    /*  Ultima Linea divisorias vertical en el pie de pagina      Claude 20-02-2024 */
+
+
+}
+footer .CpCntP div ul li, footer .CpCntP div ul li a {
+    font-size:  100%;
+    padding:    0px;
+    width:      100%;
+    z-index:    1;
+    transition:         all .75s;
+    -webkit-transition: all .75s;
+    -moz-transition:    all .75s;
+    -o-transition:      all .75s;
+}
+footer ul li a:hover {
+    text-decoration: none;
+    padding:    0px;
+    color:      rgb(0,0,0,.65);
+    text-shadow: 0px 0px 1px rgb(0,0,0,.5);
+}
+footer .copyright {
+    margin: 0;
+    padding: 2px 0;
+}
+footer .container .row .col-lg-12 {
+    padding: 0px;
+    margin: 0px;
+}
+footer .container, footer .container .row {
+    width: 100%;
+    z-index: 0;
+}
+.foot {
+    min-height: 100px;
+    min-width:  50%;
+    width:      100%;
+    z-index:    0;
+}
+.pie{
+    vertical-align:text-bottom;
+    vertical-align:baseline;
+    vertical-align:bottom;
+    bottom: 0px;
+    color: #777;
+    width: auto;
+    background-color: transparent;
+    max-height: 30px;
+    cursor: default;
+    margin: 0px;
+    padding: 0px;
+    z-index: 0;
+}
+
+table, h2 {
+    padding:    auto;
+    margin:     5px 0px 1%;
+    max-width:  95%;
+    background-color: transparent;
+}
+ a {
+    display:    block;
+    width:      50%;
+    margin:     auto;
+    margin-top: 5%;
+    text-decoration: none;
+}
+
+.cpCont {
+    height:     auto;
+    width:      auto;
+    position:   relative;
+}
+li {
+    list-style-position: inside;
+            padding-left: 1.5em;
+}
+.InfoM {
+    color: #777;
+    cursor: pointer;
+}
+.InfoM:hover {
+    color: #AAA;
+    cursor: pointer;
+}
+
+li:nth-child(2) span {
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    -o-animation-delay: .5s;
+    animation-delay: .5s;}
+li:nth-child(3) span {
+    -webkit-animation-delay:.4s;
+    -moz-animation-delay:.4s;
+    -o-animation-delay:.4s;
+    animation-delay:.4s;}
+li:nth-child(4) span {
+    -webkit-animation-delay:.3s;
+    -moz-animation-delay:.3s;
+    -o-animation-delay:.3s;
+    animation-delay:.3s;}
+li:nth-child(5) span {
+    -webkit-animation-delay:.2s;
+    -moz-animation-delay:.2s;
+    -o-animation-delay:.2s;
+    animation-delay:.2s;}
+li:nth-child(6) span {
+    -webkit-animation-delay:.1s;
+    -moz-animation-delay:.1s;
+    -o-animation-delay:.1s;
+    animation-delay:.1s;
+}
+[class^="m-"] {
+    float:      left;
+    display:    block;
+    clear:      both;
+    background-position: center center;
+          background-repeat: no-repeat;
+            background-size: 30px 25px;
+            background-position-x: 50%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Georgia","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 3%;
+}
+
+p {
+    font-size: 100%;
+    line-height: 1.6;
+    color: #000;
+}
+
+svgs {
+    color:  #FFAAFF;
+    fill:   #00FFFF;
+    stroke: #FF00FF;
+    border: 5px solid currentColor;
+}
+.cmpo {
+    border: 1px solid rgb(0,0,0,.25);
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+[class^="i-"],[class^="o-"] {
+    border: 0px solid rgb(0,0,0,.25);
+    position: absolute;
+    display: block;
+    margin-top: 1px;
+    margin-right: 0px;
+    float: right;
+    border-radius: 5px 0px 0px 5px;
+    -moz-border-radius: 5px 0px 0px 5px;
+    -webkit-border-radius: 5px 0px 0px 5px;
+    transition:         all .75s;
+    -webkit-transition: all .75s;
+    -moz-transition:    all .75s;
+    -o-transition:      all .75s;
+}
+[class^="i-"] {
+    width:      auto;
+    min-width:  25px;
+    line-height: 1.0;
+    min-height: 30px;
+    max-height: 30px;
+    padding:    0.5% 0px 0px 3px;
+    color:      transparent;
+    background-color:rgb(136,119,51,.95);
+    transition:         all .75s;
+    -webkit-transition: all .75s;
+    -moz-transition:    all .75s;
+    -o-transition:      all .75s;
+}
+[class^="o-"] {
+    float: right;
+    margin-top: -2%;
+    margin-left:50%;
+    max-height: 20px;
+}
+
+  @font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome/webfonts/fontawesome-webfont.eot');
+    src: url('../fonts/fontawesome/webfonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/fontawesome/webfonts/fontawesome-webfont.woff') format('woff'),
+      url('../fonts/fontawesome/webfonts/fontawesome-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .fa-cart:before{content:"\f07a"}
+  .fa-cart-plus:before{content:"\f217"}
+  .fa-cart-arrow-down:before{content:"\f218"}
+  .fa-opencart:before{content:"\f23d"}
+  
+.card, .card-body, .gnrl {
+    z-index: 0;
+}
+.frm-cntrl::-moz-placeholder          {color: #BBB}
+.frm-cntrl:-ms-input-placeholder      {color: #BBB}
+.frm-cntrl::-webkit-input-placeholder {color: #BBB;}
+::placeholder               { color: #BBB; }
+::-moz-placeholder          { color: #BBB; }
+::-webkit-input-placeholder { color: #BBB; }
+:-ms-input-placeholder      { color: #BBB; }
+.frm-cntrl               { color: #777; background-color: #777; }
+
+input[type="checkbox"].frm-cntrl {
+  margin: 0px;
+  padding: 0px;
+  margin: 0px 2% 0px 3%;
+  width: max-content;
+}
+.iniusr, .login, .iniusr + form {
+  margin: 1% 3%;
+  padding: 1% 5%;
+  /*background-color: #F0F;*/
+}
+.btn {
+width: 100%;
+min-width: 100%;
+height: 44px;
+padding: 3px 12px;
+font-size: 120%;
+line-height: 1.15;
+}
+.login input[type='text'] {
+background-color: #FFF;
+}
+form {
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 1px 2px 1px rgb(0,0,0,.075), 0 0 4px 1px rgb(0, 0, 0, .075);
+          box-shadow: 0px 1px 2px 1px rgb(0,0,0,.075), 0 0 4px 1px rgb(0, 0, 0, .075);
+  padding: 2% 5% 1%;
+  border: 0px solid #000;
+}
+label {
+    display: block;
+    margin-top: 1em;
+}
+
+input:valid {
+    background-color: #FFF !important;
+    -webkit-box-shadow: 0 0 2px 1px rgb(200, 233, 233, .2);
+            box-shadow: 0 0 2px 1px rgb(200, 233, 233, .2);
+}
+
+input:invalid {
+    border: solid 1px rgb(107, 22, 7);
+    -webkit-box-shadow: inset 0 0 1px 1px rgb(0,0,0,.075), inset 0 0 4px 1px rgb(200, 50, 50, .6);
+            box-shadow: inset 0 0 1px 1px rgb(0,0,0,.075), inset 0 0 4px 1px rgb(200, 50, 50, .6);
+}
+
+.frm-cntrl {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 120%;
+    line-height: 1.75;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgb(0, 0, 0, .075);
+            box-shadow: 0 1px 1px rgb(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+         -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  }
+
+  .frm-cntrl:focus {
+    outline: 0;
+  }
+  .frm-cntrl[disabled],
+  .frm-cntrl[readonly],
+  fieldset[disabled] .frm-cntrl {
+    background-color: #eee;
+    opacity: 1;
+  }
+  .frm-cntrl[disabled],
+  fieldset[disabled] .frm-cntrl {
+    cursor: not-allowed;
+  }
+  textarea.frm-cntrl {
+    height: auto;
+  }
+  #oContn > div {
+    /**background-color: #FF529B;*/
+    padding: auto;
+    justify-content: center;
+    margin: 5% auto;
+  }
+  #oContn > div > div, .dsbrd form {
+    padding: auto;
+    justify-content: center;
+    margin: 1% auto;
+  }
+  select[name="sucursal"] {
+    max-width: 99%;
+  }
+  .bolvrs {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 130%;
+    font-style: italic;
+    font-weight: bold;
+    padding: 10% 0% !important;
+    height: 20px;
+    min-height: 20PX;
+    max-height: 20PX;
+    margin-bottom: 20% !important;
+  }
+  .flechad, .flechadeno, .flechamate, .elimina, .eliminadeno, .eliminamate {
+    cursor: pointer;
+    border: 1px solid #678;
+    color: #BFC8D0;
+    color: rgb(30, 75, 85);             /* Claude 20-02-2024 */
+    margin: 2px !important;
+    width: 10px;
+    min-width: 10px;
+    max-width: 10px;
+    padding: 4px 6px 3px;
+    line-height: 1;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px 1px rgb(0,0,0,.15);
+  }
+
+  .flechamate {
+    line-height: 4.25;
+    padding: 5px 6px;
+  }
+  .elimina {
+    margin-left: 2px;
+    min-width: 10px;
+    max-width: 10px;
+    width: 10px;
+  }
+  .flechad:hover, .flechadeno:hover, .flechamate:hover, 
+  .elimina:hover, .eliminadeno:hover, .eliminamate:hover {
+    color: rgb(50, 166, 166, .5);   /* Claude 22-02-2024 */
+    border: 1px solid #012;
+    font-weight: bold;
+    padding: 2px 3px;
+    margin-left: 5px !important;
+  }
+  .flechamate:hover {
+    margin-left: 2px !important;
+  }
+  .flechad::after, .flechadeno::after, .flechamate::after, 
+  .elimina::after, .eliminadeno::after, .eliminamate::after {
+    font: var(--fa-font-solid);
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: normal;
+  }
+  .flechad::after, .flechadeno::after {
+    content: "\f061";
+  }
+  .flechamate, .flechamate::after {
+    content: "\f063";
+    max-height: 80px;
+    font-size: 22px;
+  }
+  .elimina::after, .eliminadeno::after, .eliminamate::after {
+    content: "\f2ed";
+  }
+  .col label {
+    text-align: justify;
+    padding-left: 5px;
+  }
+  #denod, #montod {
+    font-size: 10pt;
+    line-height: 1;
+    padding-top: 3px;
+    padding-bottom: 0px;
+  }
+  #serial {
+    height: auto;
+    min-height: auto;
+    max-height: auto;
+  }
+  table#tblCte {
+    width: 90%;
+    min-width: 90%;
+    max-width: 90%;
+    margin: 0px auto;
+    padding: 0px;
+  }
+  table#tblCte * {
+    text-transform: lowercase;
+    font-size: 100%;
+    text-transform: capitalize !important;
+    border: 1px solid rgb(0,0,0,.25);
+    line-height: 0.5;
+    padding: 5px 1px;
+  }
+  table#tblCte th {
+    background-color: rgb(100,150,200,.75);
+    font-weight: bold;
+    text-align: center;
+  }
+  table#tblCte td {
+    font-size: 70%;
+  }
+  table#tblCte td.nmbr {
+    text-align: right;
+  }
+  
+  .addofi::after, .addofid::after {
+    font: var(--fa-font-solid);
+    font-size: 14px;
+    font-size: 16px;
+    line-height: 1px;
+    font-weight: 900; 
+    content: "\f066";
+    /*padding: 0px;
+    cursor: pointer;
+    border: 1px solid #000; */
+    color: #1808f0;
+    margin-left: 10px;   /*  Margen del boton agregar destino       Claude 20-02-2024 */
+    padding: 1px;
+    cursor: pointer;
+    border: 1px solid #000;
+    border: 1px solid rgb(58, 55, 233);
+    /* Borde del boton de agregar lugar de destino / oficina en los comprobantes    Claude 20-02-2024 */
+  }
+
+  td.ImpPdf {
+    text-align: center;
+    cursor: pointer;
+  }
+  td b::after {
+    font: var(--fa-font-solid);
+    font-size: 14px;
+    line-height: 1px;
+    font-weight: 900; 
+    content: "\f02f";
+    padding: 0px;
+    cursor: pointer;
+    width: 90%;
+    min-width: 90%;
+    max-width: 90%;
+  }
+  #newofice, #saveofice,
+  #nwofi, #addof,
+  #nwofid, #addofd {
+    display: none;
+  }
+  #frmofice {
+    display: none;
+    position: absolute;
+    top: 10%;
+    background-color: #4F8A10;
+  }
+
+  .Edita b::after {
+    content: "\f040";
+    border-width: 0px;
+    max-height: 5px;
+    padding: 0px;
+    background-color: transparent;
+  }
+  .Edita,.Edita b,.Edita b::after {
+    border-width: 0px;
+    max-height: 5px;
+    padding: 0px;
+    background-color: transparent;
+  }
+  .Elimi b::after {
+    content: "\f1f8";
+    border: 0px solid #000;
+  }
+  
+  @media all and (min-width: 769px) {
+    .form-inline .frm-cntrl {
+      display: inline-block;
+      width: auto;
+      vertical-align: middle;
+    }
+    .form-inline .frm-cntrl-static {
+      display: inline-block;
+    }
+    .form-inline .input-group .input-group-addon,
+    .form-inline .input-group .input-group-btn,
+    .form-inline .input-group .frm-cntrl {
+      width: auto;
+    }
+    .form-inline .input-group > .frm-cntrl {
+      width: 100%;
+    }
+    .form-inline .has-feedback .frm-cntrl-feedback {
+      top: 0;
+    }
+    .form-inline .frm-grp {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+    .form-horizontal .frm-grp-sm .control-label {
+      padding-top: 6px;
+      font-size: 100%;
+    }
+    .navbar-form .frm-grp {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+    nav, .menu {
+        justify-content: center;
+        width: 100%;
+        background-color: rgb(17,58,58); /* 02/02/2024 Claude add */ 
+    }
+    .menu {
+      width: 70%;
+      margin-left: 10%;
+      padding-left: 10%;
+    }
+    .logo {
+        flex: 1;
+    }
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toggle {
+        flex: 1;
+        text-align: right;
+        order: 2;
+    }
+    /* Button up from tablet screen */
+    .menu li.button a {
+        padding: 10px 15px;
+        margin: 5px 0;
+    }
+    .button a {
+        background-color: rgb(17,58,58);
+
+        border: 1px royalblue solid;
+    }
+    .button.secondary {
+        border: 0;
+    }
+    .button.secondary a {
+        background-color: transparent;
+        border: 1px #0080ff solid;  
+    }
+    .button a:hover {
+        text-decoration: none;
+    }
+    .button:not(.secondary) a:hover {
+        background-color: royalblue;
+        border-color: darkblue;
+    }
+    .ppal{
+      min-width: 100%;
+    }
+    .ppal #header {
+      min-width: 4%;
+      max-width: 10%;
+      padding: 0;
+      padding-left: 20px;
+      margin: 0;
+      background-color: rgb(17,58,58);
+    }
+    .ppal #header img {
+        background-color: rgb(17,58,58);
+        min-width: 100%; /* Claude 02/02/2024, add */
+      /*  height: 80%; Claude 02/02/2024 */  
+    }
+    .ppal #title {
+      min-width: 65%;
+      padding: 0;
+      margin: 0;
+       max-width: 85%; 
+      background-color: rgb(17,58,58) !important;
+    }
+
+  }
+  @media all and (max-width: 768px) {
+    .ppal{
+      min-width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .ppal #header {
+      min-width: 4%;
+      max-width: 10%;
+      padding: 0;
+      margin: 0;
+      background-color: rgb(17,58,58);
+    }
+    .ppal #title {
+      min-width: 65%;
+      padding: 0;
+      margin: 0;
+      /* max-width: 85%; Claude 02/02/2024 rem */
+      background-color: rgb(17,58,58);
+
+    }
+    .container {
+        padding: 0;
+        left: 0;
+        margin: 0;
+    }
+    .navbar-form .frm-grp {
+      margin-bottom: 5px;
+    }
+    .navbar-form .frm-grp:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    input[type="date"].frm-cntrl,
+    input[type="time"].frm-cntrl,
+    input[type="datetime-local"].frm-cntrl,
+    input[type="month"].frm-cntrl {
+      line-height: 34px;
+    }
+  }
+  .btn-primary {
+    background-color: rgb(17,58,58,.85); /* 02/02/2024 Claude add */
+    border: 2px solid rgb(17,58,58); /* 02/02/2024 Claude add */
+    box-shadow: 0 0 2px 1px rgb(17,58,58,.25) inset;  /* 02/02/2024 Claude add */
+
+    border: 0px !important;
+  }
+  .btn-primary:hover {
+    background-color: rgb(0,80,80,.5);
+  }
+  .btn-primary:disabled {
+    background-color: rgb(40,60,80,.2);
+  }
+  button {
+    box-shadow: 1px 1px 3px 1px rgb(0,0,0,.05);
+  }
+  
+  .table, .tables {
+    margin: 1% 5% !important;
+    padding: auto;
+    max-width: 90%;
+  }
+  .tables {
+    min-width: 90%;
+  }
+  .table tr:nth-child(odd)>th, tr:nth-child(odd)>th {
+    background-color: rgb(0,0,0,.5);
+    color: #FFF;
+  }
+  .table tr:nth-child(even)>td, tr:nth-child(even)>td {
+    background-color: rgb(0,0,0,.05);
+  }
+  .table tr:nth-child(odd)>td, tr:nth-child(odd)>td {
+    background-color: rgb(0,0,0,.1);
+  }
+  .table tr>th {
+    text-align: center;
+  }
+  .table tr>th:not(.table tr>th:last-child), .table tr>td:not(.table tr>th:last-child) {
+    border-right: 1px solid rgb(0,0,0,.15);
+  }
+  .ImpPdfR {
+    text-align: center;
+  }
+  th, td {
+    padding: 0.10% 0.25%;
+  }
+  th *, td *,
+  th b, td b {
+    border: 0px solid #000;
+  }
+  @keyframes beat {
+    30%, 90% { transform: scale(0.8, 0.8); }
+  }
+  div.row div.col-4 label {
+    margin-top: 0px;
+    float: right;
+    text-align: right;
+    padding-top: 1%;
+    border: 0px solid #000 !important;
+  }
+  input[type="radio"].frm-cntrl {
+    margin: 0px;
+    padding: 0px;
+    margin: 12px 0px 0px;
+    height: max-content;
+    padding: 1px 1px;
+    width: max-content;
+  }
+  div.row div.col-8 {
+    margin-right: 0;
+    padding-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 10px;
+    float: left;
+  }
+  .dscrpt {
+    text-align: left;
+  }
+  #lgnfrm label {
+    background-color: rgb(90,100,100,.5);
+    color: rgb(245,255,255,.75);
+    padding-bottom: 5px;
+    height: 100%;
+  }
+  
+.btn-primary, .btn-primary-btn, a button.btn-primary-btn,
+button.btn-primary, button.btn-primary-btn, button,
+input[type="submit"], .btn {
+  background-color: rgb(190,200,200,.5) !important;
+  color: rgb(0,0,0,.75);
+  border: 0px solid rgb(250,255,255,.95) !important;
+  box-shadow: -1px -1px 3px 2px rgb(150,160,160,.35) inset,
+              0px 0px 2px 1px rgb(150,160,160,.35) inset,
+              1px 1px 1px 1px rgb(150,160,160,.35) inset;
+  min-height: 34px;
+  height: auto !important;
+  max-height: auto !important;
+  padding: 5px !important;
+  font-size: 90%;
+}
+.btn-primary-btn:disabled, button:disabled,
+.input-wrapper input[type="submit"]:disabled {
+  background-color: rgb(160,160,160,.1);
+  color: rgb(100,100,100,.25);
+  cursor:not-allowed;
+}
+.btn-secondary {
+  background-color: rgb(30,100,70,1);
+  border: 2px solid rgb(17,58,58);
+  box-shadow: 0 0 2px 1px rgb(17,58,58,.25) inset;
+  color: rgb(255,255,255,.95);
+  border: 0px !important;
+}
+.btn-primary:hover, .btn-primary-btn:hover, button:hover, .btn:hover {
+  background-color: rgb(245,255,255,.95) !important;
+  box-shadow: -1px -1px 4px 3px rgb(90,100,100,.15) inset,
+              0px 0px 3px 2px rgb(90,100,100,.25) inset,
+              1px 1px 2px 1px rgb(90,100,100,.35) inset;
+  border: 1px solid rgb(40,50,50,.25) !important;
+  color: rgb(0,0,0);
+}
+.btn-primary:disabled {
+  background-color: rgb(40,60,80,.2);
+  color: rgb(100,100,100,.25);
+}
