@@ -1,12 +1,27 @@
 {
-  "userid": 1,
-  "nombre": "Robert",
-  "apellido": "Gutierrez",
-  "telefono": "04242997367",
-  "email": "robgutgomgmailcom",
-  "usuario": "Robguter",
-  "tipouser": "Freelancer",
-  "informacion": "Programador PHP",
-  "estatus": "Activo",
-  "imagen": "img_689a45d5794f59.63530444.jpg"
+    "usuario":[
+    {
+      "userid": 1,
+      "nombre": "Robert",
+      "apellido": "Gutierrez",
+      "telefono": "04242997367",
+      "email": "robgutgomgmailcom",
+      "usuario": "Robguter",
+      "tipouser": "Freelancer",
+      "informacion": "Programador PHP",
+      "estatus": "Activo",
+      "imagen": "img_689a45d5794f59.63530444.jpg"
+    },{
+      "userid": 2,
+      "nombre": "Rosbely",
+      "apellido": "Gutierrez",
+      "telefono": "04127049484",
+      "email": "rosbegut@gmailcom",
+      "usuario": "Rosbegut",
+      "tipouser": "Freelancer",
+      "informacion": "Administradora",
+      "estatus": "Activo",
+      "imagen": "img_689a45d5794f59.63530444.jpg"
+    }
+  ]
 }
