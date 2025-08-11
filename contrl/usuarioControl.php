@@ -25,7 +25,7 @@ class usuarioControl extends Controlador {
     public function index() {
         /* if ( Session::get('autenticado')=='' )
             header('location: ' . URL_BASE . 'apifreelncr/login'); */
-
+        $this->getAll();
         $this->_vista->titulo = 'Portada';
         $this->_vista->renderizar('usuario');
     }
