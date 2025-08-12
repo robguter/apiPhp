@@ -38,7 +38,7 @@ class Modl {
         $result = $_pdoStat->execute();
 
         $hablusr = "CREATE TABLE IF NOT EXISTS habilusers(
-            freeid INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+            freeid INT NOT NULL PRIMARY KEY,
             hablid INT NOT NULL,
             nivel ENUM('Principiante', 'Intermedio', 'Experto') NOT NULL
         )";
