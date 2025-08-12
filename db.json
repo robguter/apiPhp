@@ -48,30 +48,6 @@
     {
       "hablid":5,
       "nombre": "Android"
-    },
-    {
-      "hablid":6,
-      "nombre": "Kotlin"
-    },
-    {
-      "hablid":7,
-      "nombre": "React"
-    },
-    {
-      "hablid":8,
-      "nombre": "MongoDB"
-    },
-    {
-      "hablid":9,
-      "nombre": "Express"
-    },
-    {
-      "hablid":10,
-      "nombre": "Angular"
-    },
-    {
-      "hablid":11,
-      "nombre": "NodeJS"
     }
   ],
     "habilusers":[
@@ -98,11 +74,6 @@
     {
       "freeid":2,
       "hablid": 2,
-      "nivel": "Intermedio"
-    },
-    {
-      "freeid":2,
-      "hablid": 3,
       "nivel": "Intermedio"
     }
   ],
