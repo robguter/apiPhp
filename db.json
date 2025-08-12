@@ -4,7 +4,7 @@
       "caliid":1,
       "trabid": 1,
       "calificadorid": 1,
-      "calificadoid": 1,
+      "calificadoid": 2,
       "puntuacion": 9,
       "comentario": "Buena puntuación",
       "fechacali": "15/08/2025"
@@ -12,7 +12,7 @@
     {
       "caliid":2,
       "trabid": 1,
-      "calificadorid": 1,
+      "calificadorid": 2,
       "calificadoid": 1,
       "puntuacion": 8,
       "comentario": "Buena puntuación",
@@ -21,7 +21,7 @@
     {
       "caliid":3,
       "trabid": 1,
-      "calificadorid": 1,
+      "calificadorid": 3,
       "calificadoid": 2,
       "puntuacion": 10,
       "comentario": "Máxima puntuación",
