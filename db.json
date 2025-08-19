@@ -2,27 +2,18 @@
     "calificaciones":[
     {
       "caliid":1,
-      "trabid": 1,
-      "calificadorid": 1,
-      "calificadoid": 2,
       "puntuacion": 9,
       "comentario": "Buena puntuación",
       "fechacali": "15/08/2025"
     },
     {
       "caliid":2,
-      "trabid": 1,
-      "calificadorid": 2,
-      "calificadoid": 1,
       "puntuacion": 8,
       "comentario": "Buena puntuación",
       "fechacali": "15/08/2025"
     },
     {
       "caliid":3,
-      "trabid": 1,
-      "calificadorid": 3,
-      "calificadoid": 2,
       "puntuacion": 10,
       "comentario": "Máxima puntuación",
       "fechacali": "13/08/2025"
@@ -40,111 +31,26 @@
     {
       "hablid":3,
       "nombre": "JavaScript"
-    },
-    {
-      "hablid":4,
-      "nombre": "Python"
-    },
-    {
-      "hablid":5,
-      "nombre": "Android"
-    }
-  ],
-    "habilusers":[
-    {
-      "freeid":1,
-      "hablid": 1,
-      "nivel": "Experto"
-    },
-    {
-      "freeid":1,
-      "hablid": 2,
-      "nivel": "Intermedio"
-    },
-    {
-      "freeid":1,
-      "hablid": 3,
-      "nivel": "Avanzado"
-    },
-    {
-      "freeid":2,
-      "hablid": 1,
-      "nivel": "Principiante"
-    },
-    {
-      "freeid":2,
-      "hablid": 2,
-      "nivel": "Intermedio"
     }
   ],
     "pagos":[
     {
       "pagoid":1,
-      "trabid": "1",
       "monto":2250,
       "fechapago": "15/09/2025",
-      "metodopago":"Por horas",
       "estado": "Pendiente"
     },
     {
       "pagoid":2,
-      "trabid": "2",
       "monto":2050,
       "fechapago": "15/09/2025",
-      "metodopago":"Por horas",
       "estado": "Pendiente"
     },
     {
       "pagoid":3,
-      "trabid": "1",
       "monto":2550,
       "fechapago": "15/09/2025",
-      "metodopago":"Por horas",
       "estado": "Pendiente"
-    }
-  ],
-  "proyectos":[
-    {
-      "proyid":1,
-      "cnteid":1,
-      "titulo":"Proyecto de PHP",
-      "descripcion": "Crear API con PHP",
-      "presupuesto": 2500,
-      "fechacreacion": "05/08/2025",
-      "fechalimite": "05/09/2025",
-      "estado": "Abierto"
-    },
-    {
-      "proyid":2,
-      "cnteid":2,
-      "titulo":"Control de Estudio",
-      "descripcion": "Crear control de estudio para vuelos",
-      "presupuesto": 3000,
-      "fechacreacion": "05/08/2025",
-      "fechalimite": "05/10/2025",
-      "estado": "Abierto"
-    }
-  ],
-  "trabajos": [
-    {
-      "trabid": 1,
-      "proyid": 1,
-      "freeid": 1,
-      "descripcion": "Crear API",
-      "presupuesto": 2000,
-      "fechainicio": "11/08/2025",
-      "fechafin": "11/09/2025",
-      "estado": "Propuesto"
-    },
-    {
-      "trabid": 2,
-      "proyid": 1,
-      "freeid": 2,
-      "descripcion": "Crear API",
-      "presupuesto": 2100,
-      "fechainicio": "11/08/2025",
-      "fechafin": "11/09/2025",
-      "estado": "Propuesto"
     }
   ],
     "usuarios":[
@@ -153,23 +59,13 @@
       "nombre": "Robert",
       "apellido": "Gutierrez",
       "telefono": "04242997367",
-      "email": "robgutgomgmailcom",
-      "usuario": "Robguter",
-      "tipouser": "Freelancer",
-      "informacion": "Programador PHP",
-      "estatus": "Activo",
-      "imagen": "img_689a45d5794f59.63530444.jpg"
+      "email": "robgutgomgmailcom"
     },{
       "userid": 2,
       "nombre": "Rosbely",
       "apellido": "Gutierrez",
       "telefono": "04127049484",
-      "email": "rosbegut@gmailcom",
-      "usuario": "Rosbegut",
-      "tipouser": "Freelancer",
-      "informacion": "Administradora",
-      "estatus": "Activo",
-      "imagen": "img_689a45d5794f59.63530444.jpg"
+      "email": "rosbegut@gmailcom"
     }
   ]
 }
